@@ -2,47 +2,109 @@
 /* CSS Document */
 
 /* STUDENTS, PUT YOUR STYLES HERE */
+/* 1. Make the green item box here get a blue background color on hover. Use a 1 second duration. */
 .item_1_box {
-background-color:#090;
+	background-color:#090;
+	transition: background-color .5s ease .2s;
+}
+.item_1_box:hover {
+	background-color: blue;
 }
 
+/* 2. Make the green item box here become noticeably wider on hover. Use a 3 second duration. */
 .item_2_box {
-width: 50%;
+	width: 50%;
+	transition: width .2s ease .1s;
+}
+.item_2_box:hover {
+	width: 75%;
 }
 
+/* 3. Make the green item box here noticeably increase its height on hover. Use a .5 second duration. */
 .item_3_box {
-height: 1.2em;
+	height: 1.2em;
+	transition: height .2s ease .1s;								
+}
+.item_3_box:hover{
+		height: 2em;
 }
 
+/* 4. Make the green item box here become larger on hover, using transform:scale (not width &amp; height).*/
 .item_4_box {
+	scale: 1;
+}
+.item_4_box:hover {
+	transform: scale(1.3);
 }
 
+/* 5. Make the green item box here become noticeably more transparent on hover. */
 .item_5_box {
-height: 1.2em;
+	opacity: 1;
+	height: 1.2em;
+	transition: opacity .5s ease .1s;
+}
+.item_5_box:hover {
+	opacity: .6;
 }
 
+/* 6. Make this green item box's text become a different color and larger font size on hover. */
 .item_6_box {
 	color:#ff9;
 	font-size: 1em;
+	transition: color .2s ease .1s;	
+}
+.item_6_box:hover {
+	color: #101601;
 }
 
+/* 7. Increase the padding-left of this green item box on hover, so the text inside noticeably slides to the right. */
 .item_7_box {
 	width: 80%;
 	padding-left: 4%;
 	text-align:left;
+	transition: padding-left .2s ease .1s;	
+}
+.item_7_box:hover{
+	padding-left: 8%;
 }
 
+/* 8. On hover make the green item box here animate becoming wider, and after that change is completely done, THEN animate becoming a different text color. */
 .item_8_box {
 	width:50%;
 	color:#ff9;
 	background-color: #090;
+	transition: width .5s ease .2s,
+	 color .5s ease .7s;
+}
+.item_8_box:hover {
+	width: 70%;
+	color: #101601;
+
 }
 
+/* 9. Assign the img/dog.png as the background of the green item box. Show its head at first, then on hover slide the image to the left to show its tail. */
 .item_9_box {
 	width: 150px;
 	height: 34px;
 	padding: 26px 0 0 0;
+	background-image: url(../img/dog.png);
+	background-position: 2px 0;
+	transition: background-position .4s ease-in 0s;
 }
+.item_9_box:hover {
+	background-position: 150px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
